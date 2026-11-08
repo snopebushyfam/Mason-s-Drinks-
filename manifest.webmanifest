@@ -1,6 +1,6 @@
 {
-  "name": "Masons Drinks",
-  "short_name": "Masons",
+  "name": "Masons Crew",
+  "short_name": "Masons Crew",
   "description": "Rezepte und Zubereitung aller Drinks im Masons.",
   "start_url": "./",
   "scope": "./",

@@ -1,5 +1,5 @@
 // Bei jeder Änderung an Rezepten oder Bildern VERSION erhöhen.
-const VERSION = 'v2';
+const VERSION = 'v3';
 const CACHE = 'masons-drinks-' + VERSION;
 const CORE = [
   './', 'index.html', 'style.css', 'app.js', 'drinks.js', 'manifest.webmanifest',

@@ -155,7 +155,7 @@
     el.detail.innerHTML = `
       <div class="d-bar" id="dbar">
         <button class="back" id="back">${I.back}Drinks</button>
-        <img class="d-logo" src="icons/logo@3x.png" alt="Masons"><div class="d-title">${esc(d.name)}</div>
+        <span class="lockup d-logo"><img src="icons/logo@3x.png" alt="Masons"><i></i><span>Crew</span></span><div class="d-title">${esc(d.name)}</div>
       </div>
       <div class="hero"><img src="${img(d)}" alt="${esc(d.name)}"></div>
       <div class="d-body">
@@ -231,7 +231,7 @@
     if (current !== d) portions = 1;
     current = d;
     renderDetail(d);
-    document.title = d.name + ' · Masons Drinks';
+    document.title = d.name + ' · Masons Crew';
     el.detail.classList.add('open');
     el.detail.setAttribute('aria-hidden', 'false');
     document.body.classList.add('detail-open', 'locked');
@@ -240,7 +240,7 @@
 
   function hide() {
     current = null;
-    document.title = 'Masons Drinks';
+    document.title = 'Masons Crew – Drinks';
     el.detail.classList.remove('open');
     el.detail.setAttribute('aria-hidden', 'true');
     document.body.classList.remove('detail-open', 'locked');

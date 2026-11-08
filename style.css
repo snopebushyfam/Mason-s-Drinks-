@@ -46,7 +46,10 @@ svg { fill: currentColor; }
   height: 44px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;
   padding: 0 var(--gutter);
 }
-.nav-logo { display: block; height: 30px; width: auto; }
+.lockup { display: inline-flex; align-items: center; gap: 11px; color: #fff; }
+.lockup img { display: block; height: 28px; width: auto; }
+.lockup i { width: 1px; height: 22px; background: rgba(255, 255, 255, .7); }
+.lockup span { font-size: 15px; font-weight: 300; letter-spacing: .3em; text-transform: uppercase; margin-right: -.3em; }
 .nav-right { justify-self: end; }
 body.scrolled .nav { background: var(--bar); -webkit-backdrop-filter: var(--blur); backdrop-filter: var(--blur); }
 
@@ -174,7 +177,8 @@ body.dragging #home { transition: none; }
 .d-bar.solid { background: var(--bar); -webkit-backdrop-filter: var(--blur); backdrop-filter: var(--blur); box-shadow: 0 .5px 0 var(--sep); }
 .d-bar .d-title { position: absolute; left: 70px; right: 70px; text-align: center; font-weight: 600; opacity: 0; transition: opacity .2s; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; top: calc(var(--st) + 16px); }
 .d-bar.solid .d-title { opacity: 1; }
-.d-logo { position: absolute; left: 50%; top: calc(var(--st) + 15px); height: 26px; transform: translateX(-50%); transition: opacity .2s; }
+.d-logo { position: absolute; left: 50%; top: calc(var(--st) + 15px); transform: translateX(-50%); transition: opacity .2s; }
+.d-logo img { height: 24px; } .d-logo i { height: 19px; } .d-logo span { font-size: 13px; }
 .d-bar.solid .d-logo { opacity: 0; }
 .back {
   pointer-events: auto; height: 36px; padding: 0 14px 0 8px; border-radius: 18px;
