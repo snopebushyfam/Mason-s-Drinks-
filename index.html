@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Masons Drinks</title>
+  <meta name="description" content="Rezepte und Zubereitung aller Drinks im Masons – für das Thekenteam.">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Masons">
+  <meta name="robots" content="noindex">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-side"></span>
+      <span class="nav-title">Drinks</span>
+      <span class="nav-side nav-right">
+        <button class="icon-btn" id="viewToggle" aria-label="Ansicht wechseln"></button>
+      </span>
+    </div>
+  </header>
+
+  <main id="home">
+    <div class="large-title">
+      <span class="eyebrow">Masons</span>
+      <h1>Drinks</h1>
+    </div>
+
+    <div class="toolbar" id="toolbar">
+      <label class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 0 1 5.96 12.05l4.25 4.24a1 1 0 0 1-1.42 1.42l-4.24-4.25A7.5 7.5 0 1 1 10.5 3Zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Z"/></svg>
+        <input id="q" type="search" placeholder="Drink oder Zutat suchen" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="search">
+        <button class="clear" id="clear" aria-label="Suche löschen" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20Zm3.54 5.05L12 10.59 8.46 7.05 7.05 8.46 10.59 12l-3.54 3.54 1.41 1.41L12 13.41l3.54 3.54 1.41-1.41L13.41 12l3.54-3.54-1.41-1.41Z"/></svg>
+        </button>
+      </label>
+      <div class="chips" id="chips" role="tablist"></div>
+    </div>
+
+    <div id="list" class="list"></div>
+    <p class="footer" id="footer"></p>
+  </main>
+
+  <section id="detail" class="detail" aria-hidden="true"></section>
+
+  <script src="drinks.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
