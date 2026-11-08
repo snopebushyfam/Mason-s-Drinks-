@@ -17,7 +17,7 @@ Web-App für das Thekenteam: alle Drinks aus dem Masons-Getränkehandbuch mit Fo
 ## Drinks ändern oder hinzufügen
 1. `drinks.js` öffnen und einen Block kopieren oder anpassen (Erklärung der Felder steht oben in der Datei).
 2. Foto als JPG nach `img/<id>.jpg` legen.
-3. In `sw.js` die `VERSION` um eins erhöhen (z. B. `v1` → `v2`), damit alle Handys die neue Version laden.
+3. In `sw.js` die `VERSION` um eins erhöhen und in `index.html` und `sw.js` die `?v=` Nummer gleich mit erhöhen, damit alle Handys die neue Version laden.
 
 ## Online stellen (einmalig)
 GitHub → Repository → **Settings → Pages** → Source: „Deploy from a branch“, Branch: `main`, Ordner: `/ (root)` → Save. Nach 1–2 Minuten ist die App unter der Adresse oben erreichbar.

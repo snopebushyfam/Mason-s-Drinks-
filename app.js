@@ -155,7 +155,7 @@
     el.detail.innerHTML = `
       <div class="d-bar" id="dbar">
         <button class="back" id="back">${I.back}Drinks</button>
-        <span class="lockup d-logo"><img src="icons/logo@3x.png" alt="Masons"><i></i><span>Crew</span></span><div class="d-title">${esc(d.name)}</div>
+        <span class="lockup d-logo"><img src="icons/logo@3x.png" alt="Masons" width="28" height="24" style="height:24px;width:auto"><i></i><span>Crew</span></span><div class="d-title">${esc(d.name)}</div>
       </div>
       <div class="hero"><img src="${img(d)}" alt="${esc(d.name)}"></div>
       <div class="d-body">

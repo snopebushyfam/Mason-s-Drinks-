@@ -1,8 +1,8 @@
 // Bei jeder Änderung an Rezepten oder Bildern VERSION erhöhen.
-const VERSION = 'v3';
+const VERSION = 'v4';
 const CACHE = 'masons-drinks-' + VERSION;
 const CORE = [
-  './', 'index.html', 'style.css', 'app.js', 'drinks.js', 'manifest.webmanifest',
+  './', 'index.html', 'style.css?v=4', 'app.js?v=4', 'drinks.js?v=4', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/apple-touch-icon.png', 'icons/logo@3x.png'
 ];
 const IMAGES = [
@@ -88,8 +88,8 @@ self.addEventListener('fetch', e => {
       const copy = res.clone(); caches.open(CACHE).then(c => c.put(req, copy)); return res;
     })));
   } else {
-    e.respondWith(fetch(req).then(res => {
+    e.respondWith(fetch(req, { cache: 'no-cache' }).then(res => {
       const copy = res.clone(); caches.open(CACHE).then(c => c.put(req, copy)); return res;
-    }).catch(() => caches.match(req, { ignoreSearch: true }).then(r => r || caches.match('index.html'))));
+    }).catch(() => caches.match(req).then(r => r || caches.match('index.html'))));
   }
 });
