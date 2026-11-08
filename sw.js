@@ -1,9 +1,9 @@
 // Bei jeder Änderung an Rezepten oder Bildern VERSION erhöhen.
-const VERSION = 'v1';
+const VERSION = 'v2';
 const CACHE = 'masons-drinks-' + VERSION;
 const CORE = [
   './', 'index.html', 'style.css', 'app.js', 'drinks.js', 'manifest.webmanifest',
-  'icons/icon-192.png', 'icons/apple-touch-icon.png'
+  'icons/icon-192.png', 'icons/apple-touch-icon.png', 'icons/logo@3x.png'
 ];
 const IMAGES = [
   'img/adios-motherfucker.jpg',

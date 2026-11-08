@@ -46,10 +46,9 @@ svg { fill: currentColor; }
   height: 44px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;
   padding: 0 var(--gutter);
 }
-.nav-title { font-weight: 600; opacity: 0; transform: translateY(4px); transition: opacity .2s, transform .2s; }
+.nav-logo { display: block; height: 30px; width: auto; }
 .nav-right { justify-self: end; }
 body.scrolled .nav { background: var(--bar); -webkit-backdrop-filter: var(--blur); backdrop-filter: var(--blur); }
-body.scrolled .nav-title { opacity: 1; transform: none; }
 
 .icon-btn {
   width: 36px; height: 36px; border-radius: 50%;
@@ -61,7 +60,7 @@ body.scrolled .nav-title { opacity: 1; transform: none; }
 
 /* ---------- Large title ---------- */
 main { padding-top: calc(var(--st) + 44px); padding-bottom: calc(var(--sb) + 32px); }
-.large-title { padding: 4px var(--gutter) 6px; }
+.large-title { padding: 10px var(--gutter) 6px; }
 .eyebrow { display: block; color: var(--accent); font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
 .large-title h1 { margin: 0; font-size: 34px; line-height: 41px; font-weight: 700; letter-spacing: .01em; }
 
@@ -175,6 +174,8 @@ body.dragging #home { transition: none; }
 .d-bar.solid { background: var(--bar); -webkit-backdrop-filter: var(--blur); backdrop-filter: var(--blur); box-shadow: 0 .5px 0 var(--sep); }
 .d-bar .d-title { position: absolute; left: 70px; right: 70px; text-align: center; font-weight: 600; opacity: 0; transition: opacity .2s; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; top: calc(var(--st) + 16px); }
 .d-bar.solid .d-title { opacity: 1; }
+.d-logo { position: absolute; left: 50%; top: calc(var(--st) + 15px); height: 26px; transform: translateX(-50%); transition: opacity .2s; }
+.d-bar.solid .d-logo { opacity: 0; }
 .back {
   pointer-events: auto; height: 36px; padding: 0 14px 0 8px; border-radius: 18px;
   display: inline-flex; align-items: center; gap: 2px; font-weight: 500; font-size: 16px;
